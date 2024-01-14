@@ -5,6 +5,10 @@ pipeline{
             steps{
                 echo "this is my world.. Hello world!!"  
             }
+            stage("Git checkot"){
+            steps{
+                git branch: 'main', url: 'https://github.com/mit33/hello-world.git'  
+            }
         }   
     }
 }
