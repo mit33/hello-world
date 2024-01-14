@@ -1,14 +1,16 @@
 pipeline{
     agent any
     stages{
-        stage("this is the first stage 2nd part of pipeline"){
+        stage("this is the first stage of pipeline"){
             steps{
-                echo "this is my world.. Hello world!!"  
-            }
-        stage("Git checkot"){
+                echo "this is my world.. Hello world!!"
+            } 
+        }
+        stage("git checkot"){
             steps{
-                git branch: 'main', url: 'https://github.com/mit33/hello-world.git'  
-            }
-        }   
+                git branch: 'main', url: 'https://github.com/mit33/hello-world.git'
+            } 
+        }
     }
+
 }
