@@ -11,7 +11,7 @@ pipeline{
                 git branch: 'main', url: 'https://github.com/mit33/hello-world.git'
             } 
         }
-        stage("maven work")
+        stage("maven work"){
             steps{
                 sh "mvn --version"
             }
